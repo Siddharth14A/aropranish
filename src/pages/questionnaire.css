@@ -1,0 +1,182 @@
+.q-container {
+  background: var(--bg-cream);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.q-card {
+  background: #fff;
+  width: 430px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.q-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.q-subtitle {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.q-desc {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--gray-text);
+}
+
+.q-progress {
+  width: 100%;
+  height: 4px;
+  background: #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.q-progress-fill {
+  height: 100%;
+  background: var(--green);
+  transition: 0.3s ease;
+}
+
+.q-step-label {
+  font-size: 13px;
+  color: var(--gray-text);
+  margin-bottom: 18px;
+}
+
+.q-question {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.q-required {
+  color: red;
+}
+
+.q-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.q-option {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.q-option.selected {
+  border-color: var(--green);
+  background: #e8f7ef;
+}
+
+.q-option input {
+  transform: scale(1.2);
+}
+
+.q-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.q-prev {
+  background: transparent;
+  border: none;
+  color: var(--green-dark);
+  cursor: pointer;
+}
+
+.q-next,
+.q-complete {
+  background: var(--green);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.q-next.active {
+  opacity: 1;
+}
+
+.q-complete {
+  opacity: 1;
+}
+
+.q-links {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.q-links a {
+  color: var(--green);
+}
+
+.q-powered {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+.q-input,
+.q-textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 16px;
+  outline: none;
+}
+
+.q-input:focus,
+.q-textarea:focus {
+  border-color: var(--green);
+}
+
+.q-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.name-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.q-label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: var(--green-dark);
+}
+.q-error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-align: center;
+}

@@ -1,0 +1,210 @@
+/* ================================
+   GLOBAL
+================================ */
+:root {
+  --cream: #f6f1e8;
+  --cream-soft: #f2ede3;
+  --green-text: #2c4639;
+  --gold: #bfa464;
+  --dark-green: #1e2f27;
+  --container-width: 1200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--cream);
+  color: var(--green-text);
+}
+
+section {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+  width: 100%;
+  background: white;
+  padding: 20px 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  max-width: var(--container-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-links a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: var(--green-text);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: var(--gold);
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero-section {
+  background: var(--cream);
+  text-align: center;
+}
+
+.hero-section .container {
+  padding-top: 60px;
+}
+
+.hero-heading {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero-sub {
+  font-size: 18px;
+  max-width: 780px;
+  margin: 20px auto;
+  color: #4f5d55;
+}
+
+.cta-button {
+  padding: 14px 30px;
+  background: var(--gold);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background: #a58a4f;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+.about-section {
+  background: var(--cream);
+  text-align: center;
+}
+
+.about-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 30px auto;
+  display: block;
+}
+
+/* ================================
+   PRICING CARDS
+================================ */
+.pricing-section {
+  background: white;
+}
+
+.pricing-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.pricing-card {
+  background: var(--cream-soft);
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.pricing-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.pricing-card button {
+  margin-top: 20px;
+}
+
+/* ================================
+   FAQ SECTION
+================================ */
+.faq-section {
+  background: var(--cream);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.faq-box {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.faq-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.faq-item:hover {
+  background: #fafafa;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.footer {
+  background: white;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #737373;
+}
+.brand-logo {
+  height: 5px;        /* adjust as needed */
+  width: auto;
+  margin-bottom: 4px;
+}
