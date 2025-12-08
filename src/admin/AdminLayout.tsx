@@ -8,7 +8,7 @@ export default function AdminLayout({ children }: any) {
 
   return (
     <div style={{ display: "flex", minHeight: "100vh" }}>
-      
+
       {/* Sidebar */}
       <div style={{
         width: 250,
@@ -17,10 +17,14 @@ export default function AdminLayout({ children }: any) {
         padding: 20
       }}>
         <h2>Aropranish Admin</h2>
-        
+
         <nav style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 15 }}>
           <Link to="/admin/dashboard" style={{ color: "white" }}>Dashboard</Link>
           <Link to="/admin/appointments" style={{ color: "white" }}>Appointments</Link>
+          <Link to="/admin/medical-certificates" style={{ color: "white" }}>
+            Medical Certificates
+          </Link>
+
           <Link to="/admin/off-days" style={{ color: "white" }}>Doctor Off Days</Link>
           <Link to="/admin/providers" style={{ color: "white" }}>Providers</Link>
 

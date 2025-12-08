@@ -30,8 +30,8 @@ export const BookingPage = () => {
     },
     {
       title: "Non-Urgent Prescriptions",
-      price: "$49",
-      desc: "Repeat prescriptions and medication reviews for BP/Diabetes/chronic conditions",
+      price: "$69",
+      desc: "Hypertension/Diabetes etc",
       route: "/user-details",
     },
   ];

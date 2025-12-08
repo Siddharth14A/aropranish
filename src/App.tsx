@@ -22,6 +22,12 @@ import Appointments from "./admin/Appointments";
 import OffDays from "./admin/OffDays";
 import Providers from "./admin/Providers";
 import ProtectedRoute from "./admin/ProtectedRoute";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import MedicalCertificates from "./admin/MedicalCertificates";
+
+
+
 
 
 
@@ -115,6 +121,19 @@ function App() {
           </AdminLayout>
         </ProtectedRoute>
       } />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsOfService />} />
+      <Route
+  path="/admin/medical-certificates"
+  element={
+    <ProtectedRoute>
+      <AdminLayout>
+        <MedicalCertificates />
+      </AdminLayout>
+    </ProtectedRoute>
+  }
+/>
+
 
 
     </Routes>

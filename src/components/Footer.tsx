@@ -28,8 +28,9 @@ export const Footer = () => {
           <div className="footer-legal">
             <div className="footer-heading">Legal</div>
             <a href="#about-doctor">About Dr. Nayak</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+
           </div>
         </div>
 

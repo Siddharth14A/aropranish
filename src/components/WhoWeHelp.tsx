@@ -229,19 +229,21 @@ export const WhoWeHelp = () => {
 
       {/* CTA BUTTON */}
       <button
-        style={{
-          marginTop: 60,
-          padding: "16px 35px",
-          background: "#26463e",
-          color: "#fff",
-          border: "none",
-          borderRadius: 10,
-          fontSize: 18,
-          cursor: "pointer",
-        }}
-      >
-        Start With a Screening
-      </button>
+  style={{
+    marginTop: 60,
+    padding: "16px 35px",
+    background: "#26463e",
+    color: "#fff",
+    border: "none",
+    borderRadius: 10,
+    fontSize: 18,
+    cursor: "pointer",
+  }}
+  onClick={() => (window.location.href = "/booking")}
+>
+  Start With a Screening
+</button>
+
     </section>
   );
 };

@@ -30,7 +30,13 @@ export const AboutDoctor = () => {
             AHPRA-registered and ready to support your health journey.
           </p>
 
-          <button className="aboutdoctor-btn">Book a Consultation with Dr. Nayak</button>
+          <button
+  className="aboutdoctor-btn"
+  onClick={() => (window.location.href = "/booking")}
+>
+  Book a Consultation with Dr. Nayak
+</button>
+
         </div>
 
         {/* RIGHT PHOTO COLUMN */}
